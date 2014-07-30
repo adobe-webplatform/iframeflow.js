@@ -12,20 +12,10 @@ iframeflow.js allows you to use the same regions content you built for Safari 7+
 ## Using iframeflow.js
 
 To use iframeflow, simply include the script in your page.
+   
     <script src='/iframeflow.js'></script>
 
-Then invoke iframeflow. You have two options.
-
-## Building iframeflow.js
-
-To edit and build your own version of the polyfill, you will need [node][node], [npm][npm], and [grunt][grunt]. To build:
-
-1. Clone the source code
-2. Enter the source directory
-3. Run `npm install`
-4. Run `grunt build`
-
-If you are successful, you should see a `iframeflow.js` and `iframeflow.min.js` in your source directory.
+You then have two options to invoke iframeflow. 
 
 ### window.iframeflow.doc()
 
@@ -43,6 +33,18 @@ iframeflow.js does not automatically detect updates to named flow content. It is
 ### -webkit-flow* vs. -ms-flow*
 
 If no -ms-flow* properties are defined, iframeflow.js will automatically convert any specified -webkit-flow-into or -webkit-flow-from properties to their -ms prefixed equivalents. This ensures existing content written for WebKit requires no CSS editing.
+
+## Building iframeflow.js
+
+To edit and build your own version of the polyfill, you will need [node][node], [npm][npm], and [grunt][grunt]. To build:
+
+1. Clone the source code
+2. Enter the source directory
+3. Run `npm install`
+4. Run `grunt build`
+
+If you are successful, you should see a `iframeflow.js` and `iframeflow.min.js` in your source directory.
+
 
 ## Known Limitations & Issues
 
