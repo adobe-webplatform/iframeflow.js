@@ -1,0 +1,21 @@
+{
+  "name": "iframeflow",
+  "version": "0.0.1",
+  "description": "A shim for CSS Regions in Internet Explorer",
+  "main": "iereflow.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@git.corp.adobe.com:WebEngine/iereflow.git"
+  },
+  "authors": [
+    "Sylvain Galineau"
+  ],
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2"
+  }
+}
