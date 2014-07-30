@@ -13,7 +13,7 @@ iframeflow.js allows you to use the same regions content you built for Safari 7+
 
 To use iframeflow, simply include the script in your page.
    
-    <script src='/iframeflow.js'></script>
+    <script src='./iframeflow.js'></script>
 
 You then have two options to invoke iframeflow. 
 
@@ -23,8 +23,7 @@ The `window.iframeflow.doc()` method is the simplest way to use iframeflow. It w
 
 ### window.iframeflow.selector(query, flowName)
 
-The `window.iframeflow.selector()` method allows you to select content using an arbitrary selector and give it the specified flow name. Under the covers, iframeflow.js will copy the selected elements to a new iframe and set the `-ms-flow-into` of this iframe to the specified name.
-
+The `window.iframeflow.selector()` method allows you to assign a flow name to arbitrary content using a selector. Under the covers, iframeflow.js will copy the selected elements to a new iframe and set the `-ms-flow-into` of this iframe to the specified name.
 
 ### Handling document updates
 
@@ -32,7 +31,8 @@ iframeflow.js does not automatically detect updates to named flow content. It is
 
 ### -webkit-flow* vs. -ms-flow*
 
-If no -ms-flow* properties are defined, iframeflow.js will automatically convert any specified -webkit-flow-into or -webkit-flow-from properties to their -ms prefixed equivalents. This ensures existing content written for WebKit requires no CSS editing.
+If no -ms-flow* properties are defined, iframeflow.js will automatically convert any specified -webkit-flow-into or -webkit-flow-from properties to their -ms prefixed equivalents. This allows existing WebKit-compatible content to work as-is.
+
 
 ## Building iframeflow.js
 
@@ -57,7 +57,7 @@ If you are successful, you should see a `iframeflow.js` and `iframeflow.min.js` 
 
 ## Browser Support
 
-This library targets Internet Explorer 10 and later. It has not effect in other browsers.
+This library targets Internet Explorer 10 and later. It has no effect in other browsers.
 
 ## Feedback
 
@@ -67,6 +67,6 @@ Please let us know if you have any feedback. If you run into any problems, you c
 [node]: http://nodejs.org
 [npm]: http://www.npmjs.org
 [grunt]: http://gruntjs.com
-[new-issue]: https://github.com/adobe-webplatform/css-shapes-polyfill/issues/new
+[new-issue]: https://github.com/adobe-webplatform/iframeflow.js/issues/new
 [twitter]: http://twitter.com/adobeweb
 
